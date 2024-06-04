@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataTable sin Jquery</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Datatable sin usar Jquery</h1>
+
+        <input type="text" id="searchInput" placeholder="Buscar...">
+
+
+
+        <table id="myTable">
+            <thead>
+                <tr>
+                    <th data-sort="asc">Columna 1 <span class="sort-indicator"></span></th>
+                    <th data-sort="asc">Columna 2 <span class="sort-indicator"></span></th>
+                    <th data-sort="asc">Columna 3 <span class="sort-indicator"></span></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Carlos</td>
+                    <td>Héctor</td>
+                    <td>Gabriela</td>
+                </tr>
+
+                <tr>
+                    <td>Jorge</td>
+                    <td>Gonzalo</td>
+                    <td>David</td>
+                </tr>
+
+                <tr>
+                    <td>María</td>
+                    <td>Lucía</td>
+                    <td>Marcela</td>
+                </tr>
+
+                <tr>
+                    <td>Diego</td>
+                    <td>Daniel</td>
+                    <td>Víctor</td>
+                </tr>
+
+                <tr>
+                    <td>Ulises</td>
+                    <td>Sandra</td>
+                    <td>Perla</td>
+                </tr>
+
+                <tr>
+                    <td>Alberto</td>
+                    <td>Fernando</td>
+                    <td>Rocío</td>
+                </tr>
+
+                <tr>
+                    <td>Ana</td>
+                    <td>Carmen</td>
+                    <td>Felipe</td>
+                </tr>
+
+                <tr>
+                    <td>Ricardo</td>
+                    <td>Laura</td>
+                    <td>Tomás</td>
+                </tr>
+
+                <tr>
+                    <td>Andrea</td>
+                    <td>Verónica</td>
+                    <td>Pablo</td>
+                </tr>
+
+                <tr>
+                    <td>Elena</td>
+                    <td>Julio</td>
+                    <td>Ramiro</td>
+                </tr>
+
+                <tr>
+                    <td>Esteban</td>
+                    <td>Mateo</td>
+                    <td>Valeria</td>
+                </tr>
+
+                <tr>
+                    <td>Clara</td>
+                    <td>Inés</td>
+                    <td>Marcos</td>
+                </tr>
+
+                <tr>
+                    <td>Olga</td>
+                    <td>Iván</td>
+                    <td>Raúl</td>
+                </tr>
+
+                <tr>
+                    <td>Natalia</td>
+                    <td>Oscar</td>
+                    <td>Isabel</td>
+                </tr>
+
+                <tr>
+                    <td>Manuel</td>
+                    <td>Patricia</td>
+                    <td>Álvaro</td>
+                </tr>
+
+                <tr>
+                    <td>Victoria</td>
+                    <td>Roberto</td>
+                    <td>Florencia</td>
+                </tr>
+
+                <tr>
+                    <td>Miguel</td>
+                    <td>Bianca</td>
+                    <td>Hugo</td>
+                </tr>
+
+                <tr>
+                    <td>Lucas</td>
+                    <td>Daniela</td>
+                    <td>Federico</td>
+                </tr>
+
+                <tr>
+                    <td>Alicia</td>
+                    <td>Martín</td>
+                    <td>Antonia</td>
+                </tr>
+
+                <tr>
+                    <td>Emilio</td>
+                    <td>Beatriz</td>
+                    <td>Santiago</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">
+                        <div class="pagination-controls">
+                            <label for="rows-per-page">Filas por página:</label>
+                            <select id="rows-per-page">
+                                <option value="10">10</option>
+                                <option value="30">30</option>
+                                <option value="50">50</option>
+                                <option value="100">100</option>
+                            </select>
+                            <button id="prev-page" disabled>Anterior</button>
+                            <span id="page-info">Página 1 de 1</span>
+                            <button id="next-page" disabled>Siguiente</button>
+                        </div>
+                    </td>
+
+
+                </tr>
+
+
+            </tfoot>
+        </table>
+    </div>
+</body>
+
+<script src="script.js"></script>
+
+
+</html>
